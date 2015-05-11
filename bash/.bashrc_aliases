@@ -1,4 +1,10 @@
 alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto'
+alias grep='grep --color=auto'
+
+alias svim='sudo vim'
+alias spacman='sudo pacman'
+
 
 # uni related commands
 alias h2='java -cp /home/raphi/.m2/repository/com/h2database/h2/1.4.181/h2-1.4.181.jar org.h2.tools.Server'
@@ -6,4 +12,5 @@ alias h2='java -cp /home/raphi/.m2/repository/com/h2database/h2/1.4.181/h2-1.4.1
 #usefull commands
 alias clip='xclip -sel clip'                # copy text to clipboard
 alias stow='stow -t ~'
+
 
