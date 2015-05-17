@@ -18,6 +18,10 @@ set hlsearch
 set pastetoggle=<F2>
 
 map <F3> :set nohlsearch!<Enter>
+map <F4> :NERDTreeToggle<Enter>
+
+" auto close nerd tree when it's the only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endifR
 
 set nocompatible
 filetype off
@@ -26,6 +30,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'altercation/vim-colors-solarized'
+
 Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
