@@ -3,4 +3,4 @@
 	name = Raphael Gruber
 
 [pull]
-        rebase = true
+	rebase = true
