@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+. ~/.bashrc_aliases
+
 shopt -s checkwinsize
 
 PS1='[\u@\h \W]\$ '

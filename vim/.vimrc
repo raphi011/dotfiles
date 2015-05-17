@@ -1,4 +1,5 @@
 syntax on			" enables syntax highlighting
+
 set nowrap			" disables textwrapping
 set number			" show line numbers
 set cul				" highlight current line
@@ -18,8 +19,6 @@ set pastetoggle=<F2>
 
 map <F3> :set nohlsearch!<Enter>
 
-
-
 set nocompatible
 filetype off
 
@@ -27,9 +26,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-
-Plugin 'altercation/vim-colors-solarized'
-
 Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
