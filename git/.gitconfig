@@ -1,0 +1,6 @@
+[user]                                                                      
+    email = raphi011@gmail.com
+    name = Raphael Gruber
+
+[pull]
+    rebase = true
