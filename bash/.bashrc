@@ -1,11 +1,17 @@
+PS1='[\u@\h \W]\$ '
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-. ~/.bashrc_aliases
+# Set 256 colors in terminal 
+if [ -e /usr/share/terminfo/x/xterm-256color ] && [ "$COLORTERM" == "xfce4-terminal" ]; then
+        export TERM=xterm-256color
+fi
+
+# add aliases
+. ~/.bashrc_aliases             
 
 shopt -s checkwinsize
-
-PS1='[\u@\h \W]\$ '
 
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=10000
