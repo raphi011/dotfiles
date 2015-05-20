@@ -15,4 +15,5 @@ alias stow='stow -t ~'
 
 # mounts
 alias mntmedia='sudo mount -t cifs //DISKSTATION/media /mnt/media/ -o user=raphi,ip=192.168.0.100'
+alias mntshare='sudo mount -t cifs //DISKSTATION/Share /mnt/share/ -o user=raphi,ip=192.168.0.100'
 
