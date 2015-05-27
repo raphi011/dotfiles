@@ -30,6 +30,11 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 :nnoremap <Tab> :bnext<CR> 
 :nnoremap <S-Tab> :bprevious<CR>
 
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
 map <F3> :set nohlsearch!<Enter>
 map <F4> :NERDTreeToggle<Enter>
 
