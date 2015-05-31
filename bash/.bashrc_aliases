@@ -2,9 +2,12 @@ alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias grep='grep --color=auto'
 alias pacman='pacman --color always'
+alias tree='tree -C'
 
 alias svim='sudo vim'
 alias spacman='sudo pacman'
+
+alias reditr='/usr/bin/chromium --profile-directory=Default --app-id=pmfcbbijgnhoebddbjpmlikabnbnddgb'
 
 
 # uni related commands

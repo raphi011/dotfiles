@@ -3,9 +3,6 @@ set nowrap                      " disables textwrapping
 set number                      " show line numbers
 set cul                         " highlight current line
 
-set background=dark
-colorscheme solarized
-
 set autoindent
 set expandtab
 set smarttab
@@ -18,10 +15,20 @@ set smartcase
 set incsearch
 set hlsearch
 
+colorscheme desert 
+
+
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
+
 set wildmode=longest,list,full
 set wildmenu
 
 set pastetoggle=<F2>
+
+let $PYTHONPATH='/usr/lib/python3.4/site-packages'
 
 " neocomplete tab completion
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>" 
@@ -75,6 +82,7 @@ Plugin 'powerline/fonts'
 
 Plugin 'scrooloose/syntastic'
 
+Plugin 'notpratheek/vim-luna'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'Shougo/neocomplete.vim'
