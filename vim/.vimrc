@@ -42,6 +42,11 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" copy paste in gvim
+"nmap <C-V> "+gP
+"imap <C-V> <ESC><C-V>i
+"vmap <C-C> "+y
+
 map <F3> :set nohlsearch!<Enter>
 map <F4> :NERDTreeToggle<Enter>
 
@@ -77,7 +82,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'powerline/fonts'
 
 Plugin 'scrooloose/syntastic'

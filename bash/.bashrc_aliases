@@ -7,17 +7,7 @@ alias tree='tree -C'
 alias svim='sudo vim'
 alias spacman='sudo pacman'
 
-alias reditr='/usr/bin/chromium --profile-directory=Default --app-id=pmfcbbijgnhoebddbjpmlikabnbnddgb'
-
-
-# uni related commands
-alias h2='java -cp /home/raphi/.m2/repository/com/h2database/h2/1.4.181/h2-1.4.181.jar org.h2.tools.Server'
-
 # usefull commands
 alias clip='xclip -sel clip'                # copy text to clipboard
 alias stow='stow -t ~'
-
-# mounts
-alias mntmedia='sudo mount -t cifs //DISKSTATION/media /mnt/media/ -o user=raphi,ip=192.168.0.100'
-alias mntshare='sudo mount -t cifs //DISKSTATION/Share /mnt/share/ -o user=raphi,ip=192.168.0.100'
 
