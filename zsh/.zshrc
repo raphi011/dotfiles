@@ -15,6 +15,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH="$HOME/.node_modules/bin:$PATH"
+
 
 bindkey -v
 bindkey '^R' history-incremental-search-backward
