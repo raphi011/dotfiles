@@ -11,3 +11,5 @@ alias spacman='sudo pacman'
 alias clip='xclip -sel clip'                # copy text to clipboard
 alias stow='stow -t ~'
 
+# mounts
+alias mnthilda='sudo mount -t cifs //CARGOE-HILDA-01/HILDAwww /mnt/hilda -o user=apsoft2,ip=10.200.0.21'

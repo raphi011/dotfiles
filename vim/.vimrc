@@ -1,7 +1,19 @@
 syntax on			" enables syntax highlighting
+
 set nowrap                      " disables textwrapping
-set number                      " show line numbers
 set cul                         " highlight current line
+
+set number                      " show line numbers
+set relativenumber              " show relative line numbers
+
+set wrap
+set linebreak
+set nolist
+
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 10
+
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 set autoindent
 set expandtab
@@ -16,6 +28,7 @@ set incsearch
 set hlsearch
 
 colorscheme desert 
+
 
 
 :set guioptions-=m  "remove menu bar
@@ -54,20 +67,20 @@ map <F4> :NERDTreeToggle<Enter>
 
 " auto close nerd tree when it's the only window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endifR    
-
 let g:neocomplete#enable_at_startup = 1         " auto start neocomplete
 let g:airline#extensions#tabline#enabled = 1    " auto start airline
 let g:airline_powerline_fonts = 1               " populate powerline font glyphs
+" let g:airline_theme='wombat'
 let g:bufferline_echo = 0
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 ""
 
@@ -84,7 +97,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
 Plugin 'powerline/fonts'
 
 Plugin 'scrooloose/syntastic'
@@ -93,8 +105,6 @@ Plugin 'notpratheek/vim-luna'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'Shougo/neocomplete.vim'
-
-Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
