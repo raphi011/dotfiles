@@ -18,8 +18,8 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 set autoindent
 set expandtab
 set smarttab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set laststatus=2                " make airline appear immediately
 
 set ignorecase
