@@ -2,8 +2,10 @@ export PATH="$HOME/.node_modules/bin:$PATH"
 
 setopt NO_GLOBAL_RCS
 
+
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -52,10 +54,12 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git npm archlinux)
 
 
 # User configuration
+
+bindkey -v
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
