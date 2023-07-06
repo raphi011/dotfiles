@@ -6,6 +6,8 @@ test -f $HOME/.zshrc.local && source $HOME/.zshrc.local
 
 alias vi="nvim"
 alias vim="nvim"
+
 export EDITOR="nvim"
+export SHELL="/bin/zsh"
 
 eval "$(starship init zsh)"
