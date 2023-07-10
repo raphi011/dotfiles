@@ -6,7 +6,8 @@
 	rebase = true
 
 [push]
-	default = simple
+	default = simple 
+
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
         lol = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%ci)%Creset %C(green)%ce%Creset %s\"
