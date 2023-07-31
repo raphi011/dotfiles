@@ -12,6 +12,7 @@ alias vi="nvim"
 alias vim="nvim"
 
 alias k="kubectl"
+alias kcn="kubectl config set-context --current --namespace "
 
 alias ll="exa -l -g --icons --git"
 alias llt="exa -1 --icons --tree --git-ignore"
