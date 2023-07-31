@@ -1,8 +1,12 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
+#if status is-interactive
+#    # Commands to run in interactive sessions can go here
+#end
+
+if test -f ~/.config/fish/local-config.fish
+  source ~/.config/fish/local-config.fish
 end
 
-fish_add_path $HOME/go/bin /usr/local/opt/curl/bin $HOME/.local/bin
+fish_add_path /opt/homebrew/bin ~/go/bin /usr/local/opt/curl/bin ~/.local/bin
 
 alias vi="nvim"
 alias vim="nvim"
@@ -15,10 +19,11 @@ alias llt="exa -1 --icons --tree --git-ignore"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 export EDITOR="nvim"
-export SHELL="/bin/zsh"
+export VISUAL="nvim"
+export SHELL="/opt/homebrew/bin/fish"
 
 set -g fish_greeting
 
 kubectl completion fish | source
-starship init fish | source
 
+starship init fish | source
